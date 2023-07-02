@@ -23,6 +23,18 @@ jobs:
   monthly:
     name: Monthly Tasks
     uses: atc0005/shared-project-resources/.github/workflows/scheduled-monthly.yml@master
-    with:
-      build-packages: false
-      build-podman-release: false
+
+    # NOTE: These settings reflect what I am using with library projects such
+    # as atc0005/go-nagios, atc0005/go-teams-notify.
+    #
+    # If we don't use them, or set them to true then these settings will
+    # reflect tools/plugins projects which *do* use container-based builds
+    # to generate release assets.
+    #
+    # See also:
+    #
+    # - https://github.com/atc0005/shared-project-resources/pull/131
+    #
+    # with:
+    #   build-packages: false
+    #   build-podman-release: false
