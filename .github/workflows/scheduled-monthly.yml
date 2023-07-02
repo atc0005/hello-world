@@ -23,3 +23,6 @@ jobs:
   monthly:
     name: Monthly Tasks
     uses: atc0005/shared-project-resources/.github/workflows/scheduled-monthly.yml@master
+    with:
+      build-packages: false
+      build-podman-release: false
