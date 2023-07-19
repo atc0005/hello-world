@@ -30,5 +30,7 @@ jobs:
       # See also:
       #
       # - https://github.com/atc0005/shared-project-resources/pull/131
-      generate-assets: false
-      # generate-assets: true
+      # generate-assets: false
+
+      # Explicitly specify the same value as the default for imported workflow.
+      generate-assets: true
