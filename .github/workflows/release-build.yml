@@ -13,6 +13,11 @@ on:
 jobs:
   release_build:
     name: Generate release build
+
+    # https://docs.github.com/en/actions/security-guides/automatic-token-authentication
+    permissions:
+      contents: write
+
     uses: atc0005/shared-project-resources/.github/workflows/release-build.yml@add-release-build-importable-workflow
     with:
 
