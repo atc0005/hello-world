@@ -6,8 +6,8 @@ on:
   push:
     tags:
 
-      # The imported workflow performs necessary logic to separate "stable"
-      # release builds from "prerelease" builds. Here we match any semver tag.
+      # Match any semver tag, rely on the imported workflow to apply necessary
+      # logic to separate "stable" release builds from "prerelease" builds.
       - 'v[0-9]+.[0-9]+.*'
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
       contents: write
       discussions: write
 
-    uses: atc0005/shared-project-resources/.github/workflows/release-build.yml@add-release-build-importable-workflow
+    uses: atc0005/shared-project-resources/.github/workflows/release-build.yml@master
     with:
 
       # NOTE: Library projects such as atc0005/go-nagios or
@@ -29,7 +29,8 @@ jobs:
       #
       # See also:
       #
-      # - https://github.com/atc0005/shared-project-resources/pull/131
+      # - https://github.com/atc0005/shared-project-resources/pull/141
+      #
       # generate-assets: false
 
       # Explicitly specify the same value as the default for imported workflow.
