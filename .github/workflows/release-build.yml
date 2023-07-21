@@ -19,7 +19,7 @@ jobs:
       contents: write
       discussions: write
 
-    uses: atc0005/shared-project-resources/.github/workflows/release-build.yml@master
+    uses: atc0005/shared-project-resources/.github/workflows/release-build.yml@associate-dev-builds-with-development-branch
     with:
 
       # NOTE: Library projects such as atc0005/go-nagios or
