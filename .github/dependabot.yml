@@ -131,8 +131,6 @@ updates:
       - dependency-type: "all"
     commit-message:
       prefix: "canary"
-    ignore:
-      - dependency-name: "golang"
 
   ######################################################################
   # Monitor images used to build project releases
