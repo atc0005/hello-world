@@ -35,3 +35,6 @@ jobs:
 
       # Explicitly specify the same value as the default for imported workflow.
       generate-assets: true
+
+      # Opt out of release discussions.
+      create-discussion: false
